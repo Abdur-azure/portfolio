@@ -2,11 +2,11 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-    /* config options here */
+    /* config options here 
     images: {
         domains: ["cdn.hashnode.com"],
     },
-    reactStrictMode: true,
+    reactStrictMode: false,*/
 }
 
 module.exports = nextConfig
