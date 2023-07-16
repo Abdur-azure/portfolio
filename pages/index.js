@@ -24,6 +24,7 @@ import GitHubB from "../components/icons/GitHubB";
 import VisualStudio from "../components/icons/VisualStudio";
 import VSCode from "../components/icons/VSCode";
 import SQLServer from "../components/icons/SQLServer";
+import Logo from "../components/icons/Logo";
 
 // Project Card
 //import ProjectCard from "../components/ProjectCard";
@@ -231,7 +232,8 @@ export default function Home({ publications }) {
             name="description"
             content="The portfolio of frontend developer and designer, Abdur Rahman"
           />
-          <link rel="icon" href="/favicon.ico" />
+          <Logo />
+          {/* <link rel="icon" href="/favicon.ico" /> */}
         </Head>
 
         {/* Full-screen Menu */}
