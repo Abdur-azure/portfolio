@@ -232,8 +232,8 @@ export default function Home({ publications }) {
             name="description"
             content="The portfolio of frontend developer and designer, Abdur Rahman"
           />
-          <Logo />
-          {/* <link rel="icon" href="/favicon.ico" /> */}
+          {/* <Logo /> */}
+          <link rel="icon" href="/favicon.ico" />
         </Head>
 
         {/* Full-screen Menu */}
