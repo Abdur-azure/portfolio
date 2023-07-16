@@ -1,5 +1,5 @@
 
-# Portfolio - danielcranney.com
+# Portfolio - Abdur Rahman
 ## Project description
 My portfolio website, built with NextJS, React and TailwindCSS.
 
