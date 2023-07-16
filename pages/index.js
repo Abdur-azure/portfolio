@@ -1280,7 +1280,7 @@ export default function Home({ publications }) {
             <div className="flex flex-col-reverse w-full md:flex-row">
               <div className="w-full mb-4 md:pl-0 md:mb-0">
                 <p className="text-xl">
-                Let's connect and discuss how my blend of technical 
+                Let&apos;s connect and discuss how my blend of technical 
                 expertise, project management skills, and dedication 
                 can drive success in your organization.
                 </p>
