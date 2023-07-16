@@ -19,14 +19,14 @@ export default function BlogItem({ post }) {
       className="flex flex-col rounded-sm bg-white dark:bg-mid p-3.5 gap-y-3.5 group border-2 dark:border-mid dark:hover:border-brand hover:border-brand border-transparent cursor-pointer transition-all duration-150 ease-in-out relative"
       onClick={redirectToHashnode}
     >
-      <div className="w-auto">
+      {/* <div className="w-auto">
         <Image
           src={post.coverImage}
           layout="responsive"
           width={1080}
           height={567}
         />
-      </div>
+      </div> */}
       <div className="flex flex-col px-2 gap-y-1.5">
         <h3 className="mb-0 text-lg">{post.title}</h3>
         <h6 className="mb-0 text-sm font-semibold font-body">
