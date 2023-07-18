@@ -233,7 +233,7 @@ export default function Home({ publications }) {
             content="The portfolio of frontend developer and designer, Abdur Rahman"
           />
           {/* <Logo /> */}
-          <link rel="icon" href="/assets/favicon.ico" /> 
+          <link rel="icon" href="./public/assets/favicon.ico" /> 
         </Head>
 
         {/* Full-screen Menu */}
@@ -611,7 +611,7 @@ export default function Home({ publications }) {
                 </button> */}
                 <a 
                   className="text-xl btn-brand btn-lg group" 
-                  href="/assets/Abdur-Rahman.pdf" 
+                  href="./public/assets/Abdur-Rahman.pdf" 
                   download>
                     Resume
                 </a>
@@ -676,7 +676,7 @@ export default function Home({ publications }) {
                 </div>
                 <div className="flex w-full h-full mb-4 md:pl-8 md:w-2/5 md:mb-0">
                   <Image
-                    src="/assets/Abdur_Rahman.JPG"
+                    src="/public/assets/Abdur_Rahman.JPG"
                     className="overflow-hidden rounded-md"
                     width={880}
                     height={880}
