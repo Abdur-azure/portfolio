@@ -581,7 +581,7 @@ export default function Home({ publications }) {
                   />
                 </h2>
                 <p className="w-4/5 text-2xl md:w-full">
-                  I design and build websites that look good, and work well.
+                  Empowering Businesses with Seamless Software Solutions: The Full Stack Way
                 </p>
                 {/* <button
                   className="mt-4 btn-brand btn-lg group"
