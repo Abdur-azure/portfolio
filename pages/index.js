@@ -24,7 +24,6 @@ import GitHubB from "../components/icons/GitHubB";
 import VisualStudio from "../components/icons/VisualStudio";
 import VSCode from "../components/icons/VSCode";
 import SQLServer from "../components/icons/SQLServer";
-import Logo from "../components/icons/Logo";
 
 // Project Card
 //import ProjectCard from "../components/ProjectCard";
@@ -222,9 +221,8 @@ export default function Home({ publications }) {
   return (
     <div className="bg-white dark:bg-darker transition-all duration-150 ease-in-out">
       <div
-        className={`relative w-full dark:bg-dark/20 bg-light bg-opacity-10 overflow-auto min-h-screen transition-all duration-150 ease-in-out ${
-          navbarOpen ? "overflow-hidden" : "overflow-auto"
-        }`}
+        className={`relative w-full dark:bg-dark/20 bg-light bg-opacity-10 overflow-auto min-h-screen transition-all duration-150 ease-in-out ${navbarOpen ? "overflow-hidden" : "overflow-auto"
+          }`}
       >
         <Head>
           <title>Abdur Rahman | Full Stack Developer & Designer</title>
@@ -232,17 +230,15 @@ export default function Home({ publications }) {
             name="description"
             content="The portfolio of frontend developer and designer, Abdur Rahman"
           />
-          {/* <Logo /> */}
-          <link rel="icon" href="./public/assets/favicon.ico" /> 
+          <link rel="icon" href="https://raw.githubusercontent.com/danielcranney/portfolio/main/public/favicon.ico" width="48" height="48" />
         </Head>
 
         {/* Full-screen Menu */}
         <div
-          className={`fixed w-full z-50 h-screen pt-24 bg-white dark:bg-darker bg-opacity-100 transform delay-100 transition-all duration-150 ${
-            navbarOpen
-              ? "opacity-100 translate-x-0"
-              : "opacity-0 -translate-x-full"
-          }`}
+          className={`fixed w-full z-50 h-screen pt-24 bg-white dark:bg-darker bg-opacity-100 transform delay-100 transition-all duration-150 ${navbarOpen
+            ? "opacity-100 translate-x-0"
+            : "opacity-0 -translate-x-full"
+            }`}
         >
           <div className="container relative mx-auto">
             <nav className="block ml-auto">
@@ -250,11 +246,10 @@ export default function Home({ publications }) {
                 <li className="z-50 block py-2 list-none lg:inline-block">
                   <button
                     href="#"
-                    className={`header_link text-2xl font-semibold transition-all duration-150 ease-in-out ${
-                      visibleSection === "home"
-                        ? "selected delay-200"
-                        : "dark:text-light dark:hover:text-white text-mid/50 hover:text-mid border-b-2 border-transparent"
-                    }`}
+                    className={`header_link text-2xl font-semibold transition-all duration-150 ease-in-out ${visibleSection === "home"
+                      ? "selected delay-200"
+                      : "dark:text-light dark:hover:text-white text-mid/50 hover:text-mid border-b-2 border-transparent"
+                      }`}
                     onClick={() => {
                       setNavbarOpen(false);
                       scrollTo(homeRef.current);
@@ -266,11 +261,10 @@ export default function Home({ publications }) {
                 <li className="z-50 block py-2 list-none lg:inline-block">
                   <button
                     href="#"
-                    className={`header_link text-2xl font-semibold transition-all duration-150 ease-in-out ${
-                      visibleSection === "about"
-                        ? "current"
-                        : "dark:text-light dark:hover:text-white text-mid/50 hover:text-mid border-b-2 border-transparent"
-                    }`}
+                    className={`header_link text-2xl font-semibold transition-all duration-150 ease-in-out ${visibleSection === "about"
+                      ? "current"
+                      : "dark:text-light dark:hover:text-white text-mid/50 hover:text-mid border-b-2 border-transparent"
+                      }`}
                     onClick={() => {
                       setNavbarOpen(false);
                       scrollTo(aboutRef.current);
@@ -282,11 +276,10 @@ export default function Home({ publications }) {
                 <li className="z-50 block py-2 list-none lg:inline-block">
                   <button
                     href="#"
-                    className={`header_link text-2xl font-semibold transition-all duration-150 ease-in-out ${
-                      visibleSection === "skills"
-                        ? "current"
-                        : "dark:text-light dark:hover:text-white text-mid/50 hover:text-mid border-b-2 border-transparent"
-                    }`}
+                    className={`header_link text-2xl font-semibold transition-all duration-150 ease-in-out ${visibleSection === "skills"
+                      ? "current"
+                      : "dark:text-light dark:hover:text-white text-mid/50 hover:text-mid border-b-2 border-transparent"
+                      }`}
                     onClick={() => {
                       setNavbarOpen(false);
                       scrollTo(skillsRef.current);
@@ -332,11 +325,10 @@ export default function Home({ publications }) {
                 <li className="z-50 block py-2 list-none lg:inline-block">
                   <button
                     href="#"
-                    className={`header_link text-2xl font-semibold transition-all duration-150 ease-in-out ${
-                      visibleSection === "contact"
-                        ? "current"
-                        : "dark:text-light dark:hover:text-white text-mid/50 hover:text-mid border-b-2 border-transparent"
-                    }`}
+                    className={`header_link text-2xl font-semibold transition-all duration-150 ease-in-out ${visibleSection === "contact"
+                      ? "current"
+                      : "dark:text-light dark:hover:text-white text-mid/50 hover:text-mid border-b-2 border-transparent"
+                      }`}
                     onClick={() => {
                       setNavbarOpen(false);
                       scrollTo(contactRef.current);
@@ -361,13 +353,11 @@ export default function Home({ publications }) {
         {/* Header and Nav */}
         <header
           ref={headerRef}
-          className={`header top-0 mx-auto flex items-center z-50 fixed w-full transition-all duration-150 h-20 ease-in-out ${
-            scrolling ? "-translate-y-full" : ""
-          } ${
-            scrolling && !navbarOpen
+          className={`header top-0 mx-auto flex items-center z-50 fixed w-full transition-all duration-150 h-20 ease-in-out ${scrolling ? "-translate-y-full" : ""
+            } ${scrolling && !navbarOpen
               ? "dark:bg-darker bg-[#f6f5f6]"
               : "dark:bg-darker bg-[#f6f5f6]"
-          }`}
+            }`}
         >
           {/* Logo and Nav container */}
           <div className="container relative flex items-center mx-auto">
@@ -438,9 +428,8 @@ export default function Home({ publications }) {
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
                     href="#"
-                    className={`nav-item ${
-                      visibleSection === "home" ? "current" : "active"
-                    }`}
+                    className={`nav-item ${visibleSection === "home" ? "current" : "active"
+                      }`}
                     onClick={() => {
                       scrollTo(homeRef.current);
                     }}
@@ -451,9 +440,8 @@ export default function Home({ publications }) {
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
                     href="#"
-                    className={`nav-item ${
-                      visibleSection === "about" ? "current" : "active"
-                    }`}
+                    className={`nav-item ${visibleSection === "about" ? "current" : "active"
+                      }`}
                     onClick={() => {
                       scrollTo(aboutRef.current);
                     }}
@@ -464,9 +452,8 @@ export default function Home({ publications }) {
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
                     href="#"
-                    className={`nav-item ${
-                      visibleSection === "skills" ? "current" : "active"
-                    }`}
+                    className={`nav-item ${visibleSection === "skills" ? "current" : "active"
+                      }`}
                     onClick={() => {
                       scrollTo(skillsRef.current);
                     }}
@@ -505,9 +492,8 @@ export default function Home({ publications }) {
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
                     href="#"
-                    className={`nav-item ${
-                      visibleSection === "contact" ? "current" : "active"
-                    }`}
+                    className={`nav-item ${visibleSection === "contact" ? "current" : "active"
+                      }`}
                     onClick={() => {
                       scrollTo(contactRef.current);
                     }}
@@ -525,31 +511,27 @@ export default function Home({ publications }) {
                 </li>
                 <li className="z-50 inline-block list-none lg:hidden group">
                   <button
-                    className={`relative w-10 h-10 ${
-                      navbarOpen
-                        ? "dark:text-white text-dark"
-                        : "text-mid/50 group-hover:text-mid dark:opacity-50 dark:group-hover:opacity-100 dark:text-white dark:group-hover:text-white"
-                    } focus:outline-none`}
+                    className={`relative w-10 h-10 ${navbarOpen
+                      ? "dark:text-white text-dark"
+                      : "text-mid/50 group-hover:text-mid dark:opacity-50 dark:group-hover:opacity-100 dark:text-white dark:group-hover:text-white"
+                      } focus:outline-none`}
                     onClick={() => setNavbarOpen(!navbarOpen)}
                   >
                     <div className="absolute block w-5 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
                       <span
                         aria-hidden="true"
-                        className={`block absolute h-0.5 w-5 bg-current transform transition duration-200 ease-in-out ${
-                          navbarOpen ? "rotate-45" : "-translate-y-1.5"
-                        }`}
+                        className={`block absolute h-0.5 w-5 bg-current transform transition duration-200 ease-in-out ${navbarOpen ? "rotate-45" : "-translate-y-1.5"
+                          }`}
                       ></span>
                       <span
                         aria-hidden="true"
-                        className={`block absolute h-0.5 w-5 bg-current transform transition duration-200 ease-in-out ${
-                          navbarOpen ? "opacity-0" : "opacity-100"
-                        }`}
+                        className={`block absolute h-0.5 w-5 bg-current transform transition duration-200 ease-in-out ${navbarOpen ? "opacity-0" : "opacity-100"
+                          }`}
                       ></span>
                       <span
                         aria-hidden="true"
-                        className={`block absolute h-0.5 w-5 bg-current transform transition duration-200 ease-in-out ${
-                          navbarOpen ? "-rotate-45" : "translate-y-1.5"
-                        }`}
+                        className={`block absolute h-0.5 w-5 bg-current transform transition duration-200 ease-in-out ${navbarOpen ? "-rotate-45" : "translate-y-1.5"
+                          }`}
                       ></span>
                     </div>
                   </button>
@@ -609,11 +591,11 @@ export default function Home({ publications }) {
                 >
                   See my Work
                 </button> */}
-                <a 
-                  className="text-xl btn-brand btn-lg group" 
-                  href="./public/assets/Abdur-Rahman.pdf" 
+                <a
+                  className="text-xl btn-brand btn-lg group"
+                  href="https://onedrive.live.com/embed?resid=8A8FAFBD46A54CED%21112960&authkey=!AFopIUqChau9lgE&em=2"
                   download>
-                    Resume
+                  Resume
                 </a>
               </div>
             </div>
@@ -632,28 +614,28 @@ export default function Home({ publications }) {
               <div className="flex flex-col-reverse items-start w-full md:flex-row">
                 <div className="flex flex-col w-full md:pr-8 md:w-3/5">
                   <p className="text-xl">
-                    Hi! I&apos;m Abdur and I&apos;m a highly skilled and experienced 
-                    Full Stack Developer with a passion for software development and 
-                    a drive to transition into a Project Manager role. I bring expertise 
-                    in .NET development, including C#, ASP.NET, and Microsoft SQL Server. 
-                    Proficient in front-end technologies like HTML, CSS, and JavaScript, 
+                    Hi! I&apos;m Abdur and I&apos;m a highly skilled and experienced
+                    Full Stack Developer with a passion for software development and
+                    a drive to transition into a Project Manager role. I bring expertise
+                    in .NET development, including C#, ASP.NET, and Microsoft SQL Server.
+                    Proficient in front-end technologies like HTML, CSS, and JavaScript,
                     along with React.js library and Node.js framework.
                   </p>
                   <p className="text-xl">
-                  As a Full Stack Developer, I have successfully delivered numerous 
-                  software projects, demonstrating proficiency in Agile methodologies,
-                  Azure DevOps, and Kanban. I excel at leading development teams, 
-                  coordinating timelines, and managing stakeholder expectations.
+                    As a Full Stack Developer, I have successfully delivered numerous
+                    software projects, demonstrating proficiency in Agile methodologies,
+                    Azure DevOps, and Kanban. I excel at leading development teams,
+                    coordinating timelines, and managing stakeholder expectations.
                   </p>
                   <p className="text-xl">
-                  With strong problem-solving and analytical abilities, I identify 
-                  and resolve challenges effectively. Excellent communication skills 
-                  enable collaboration with cross-functional teams and clients.
+                    With strong problem-solving and analytical abilities, I identify
+                    and resolve challenges effectively. Excellent communication skills
+                    enable collaboration with cross-functional teams and clients.
                   </p>
                   <p className="text-xl">
-                  With strong problem-solving and analytical abilities,
-                  I identify and resolve challenges effectively. Excellent communication
-                  skills enable collaboration with cross-functional teams and clients.
+                    With strong problem-solving and analytical abilities,
+                    I identify and resolve challenges effectively. Excellent communication
+                    skills enable collaboration with cross-functional teams and clients.
                   </p>
                   {/* <p className="text-lg">
                     Alongside my design and development work, I run a BA Media
@@ -675,9 +657,10 @@ export default function Home({ publications }) {
                   </p> */}
                 </div>
                 <div className="flex w-full h-full mb-4 md:pl-8 md:w-2/5 md:mb-0">
-                  <Image
-                    src="/public/assets/Abdur_Rahman.JPG"
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
                     className="overflow-hidden rounded-md"
+                    src="https://onedrive.live.com/embed?resid=8A8FAFBD46A54CED%21112961&authkey=%21AFopIUqChau9lgE&width=2407&height=2770"
                     width={880}
                     height={880}
                     alt={"Abdur Rahman headshot"}
@@ -833,7 +816,7 @@ export default function Home({ publications }) {
                 marginRight={"mr-0"}
                 textTransform={"normal-case"}
                 fixedHeight={"h-28"}
-              />              
+              />
               {/* Javascript */}
               <Icon
                 IconType={Javascript}
@@ -878,7 +861,7 @@ export default function Home({ publications }) {
                 marginRight={"mr-0"}
                 textTransform={"normal-case"}
                 fixedHeight={"h-28"}
-              />              
+              />
               {/* Next */}
               <Icon
                 IconType={NextJs}
@@ -978,14 +961,14 @@ export default function Home({ publications }) {
             id="my-work"
             ref={myWorkRef}
           > */}
-            {/* My Work header */}
-            {/* <h2 className="text-5xl">My Work</h2>
+          {/* My Work header */}
+          {/* <h2 className="text-5xl">My Work</h2>
             <hr className="bg-brand w-40 h-1.5 mt-4 mb-6 border-0"></hr> */}
 
-            {/* Featured Projects Container */}
-            {/* <div className="flex flex-col w-full mb-12"> */}
-              {/* Project One */}
-              {/* <FeaturedProjectCard
+          {/* Featured Projects Container */}
+          {/* <div className="flex flex-col w-full mb-12"> */}
+          {/* Project One */}
+          {/* <FeaturedProjectCard
                 title={"Smylo"}
                 status={"Join the Waitlist"}
                 description={`Keep your life on track and never miss another important date again`}
@@ -1080,8 +1063,8 @@ export default function Home({ publications }) {
                   </>
                 }
               /> */}
-              {/* Project Two */}
-              {/* <FeaturedProjectCard
+          {/* Project Two */}
+          {/* <FeaturedProjectCard
                 title={"ColorHub"}
                 status={"V2 Just Launched"}
                 description={`Find the perfect palette for your next perfect. pick it, preview it and paste it right into your code.`}
@@ -1160,8 +1143,8 @@ export default function Home({ publications }) {
                   </>
                 }
               /> */}
-              {/* Project Three */}
-              {/* <FeaturedProjectCard
+          {/* Project Three */}
+          {/* <FeaturedProjectCard
                 title={"ProfileMe.dev"}
                 status={"Open Source"}
                 description={`Create an amazing GitHub profile complete with skills icons, stat graphs and more in just a couple of minutes.`}
@@ -1242,15 +1225,15 @@ export default function Home({ publications }) {
               />
             </div> */}
 
-            {/* Other Projects header */}
-            {/* <h2 className="text-4xl text-center">Other Projects</h2>
+          {/* Other Projects header */}
+          {/* <h2 className="text-4xl text-center">Other Projects</h2>
             <hr className="bg-brand w-40 h-1.5 mt-4 mb-6 mx-auto border-0"></hr>
             <p className="mb-16 text-lg text-center">
               Check out some of the projects I&apos;ve been a part of...
             </p> */}
 
-            {/* Other Projects Container */}
-            {/* <div className="grid grid-flow-row grid-rows-2 gap-4 grid-col-1 lg:grid-cols-3">
+          {/* Other Projects Container */}
+          {/* <div className="grid grid-flow-row grid-rows-2 gap-4 grid-col-1 lg:grid-cols-3">
               {projects.map(function (project, i) {
                 return <ProjectCard project={project} key={i} />;
               })}
@@ -1263,8 +1246,8 @@ export default function Home({ publications }) {
             id="blog"
             ref={blogRef}
           > */}
-            {/* Blog header */}
-            {/* <h2 className="text-5xl">Blog</h2>
+          {/* Blog header */}
+          {/* <h2 className="text-5xl">Blog</h2>
             <hr className="bg-brand w-40 h-1.5 mt-4 mb-6 border-0"></hr>
 
             <BlogList publications={publications} />
@@ -1282,9 +1265,9 @@ export default function Home({ publications }) {
             <div className="flex flex-col-reverse w-full md:flex-row">
               <div className="w-full mb-4 md:pl-0 md:mb-0">
                 <p className="text-xl">
-                Let&apos;s connect and discuss how my blend of technical 
-                expertise, project management skills, and dedication 
-                can drive success in your organization.
+                  Let&apos;s connect and discuss how my blend of technical
+                  expertise, project management skills, and dedication
+                  can drive success in your organization.
                 </p>
                 <p className="text-xl">
                   Email me at{" "}
@@ -1373,11 +1356,10 @@ export default function Home({ publications }) {
               >
                 <svg
                   id="e5c888e5-3206-4553-8f53-60ee93248ad9"
-                  className={`group rounded-sm transform  transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${
-                    visibleSection === "home"
-                      ? "rotate-45 scale-110"
-                      : "rotate-0 scale-100"
-                  }`}
+                  className={`group rounded-sm transform  transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${visibleSection === "home"
+                    ? "rotate-45 scale-110"
+                    : "rotate-0 scale-100"
+                    }`}
                   data-name="Layer 1"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0
@@ -1385,20 +1367,18 @@ export default function Home({ publications }) {
                 >
                   {/* Fill */}
                   <path
-                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${
-                      visibleSection === "home"
-                        ? "dark:text-white text-mid rotate-90"
-                        : "dark:text-dark text-light rotate-0"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${visibleSection === "home"
+                      ? "dark:text-white text-mid rotate-90"
+                      : "dark:text-dark text-light rotate-0"
+                      }`}
                     d="M5.64 5.64h12.73v12.73H5.64z"
                   />
                   {/* Border */}
                   <path
-                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${
-                      visibleSection === "home"
-                        ? "dark:text-white text-dark rotate-45 opacity-100"
-                        : "dark:text-white text-light rotate-45"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${visibleSection === "home"
+                      ? "dark:text-white text-dark rotate-45 opacity-100"
+                      : "dark:text-white text-light rotate-45"
+                      }`}
                     d="M12 22.41L1.59 12 12 1.59 22.41 12zM4.41 12L12 19.59 19.59 12 12 4.41z"
                   />
                 </svg>
@@ -1412,11 +1392,10 @@ export default function Home({ publications }) {
               >
                 <svg
                   id="e5c888e5-3206-4553-8f53-60ee93248ad9"
-                  className={`group rounded-sm transform  transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${
-                    visibleSection === "about"
-                      ? "rotate-45 scale-110"
-                      : "rotate-0 scale-100"
-                  }`}
+                  className={`group rounded-sm transform  transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${visibleSection === "about"
+                    ? "rotate-45 scale-110"
+                    : "rotate-0 scale-100"
+                    }`}
                   data-name="Layer 1"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0
@@ -1424,20 +1403,18 @@ export default function Home({ publications }) {
                 >
                   {/* Fill */}
                   <path
-                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${
-                      visibleSection === "about"
-                        ? "dark:text-white text-mid rotate-90"
-                        : "dark:text-dark text-light rotate-0"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${visibleSection === "about"
+                      ? "dark:text-white text-mid rotate-90"
+                      : "dark:text-dark text-light rotate-0"
+                      }`}
                     d="M5.64 5.64h12.73v12.73H5.64z"
                   />
                   {/* Border */}
                   <path
-                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${
-                      visibleSection === "about"
-                        ? "dark:text-white text-dark rotate-45 opacity-100"
-                        : "dark:text-white text-light rotate-45"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${visibleSection === "about"
+                      ? "dark:text-white text-dark rotate-45 opacity-100"
+                      : "dark:text-white text-light rotate-45"
+                      }`}
                     d="M12 22.41L1.59 12 12 1.59 22.41 12zM4.41 12L12 19.59 19.59 12 12 4.41z"
                   />
                 </svg>
@@ -1451,11 +1428,10 @@ export default function Home({ publications }) {
               >
                 <svg
                   id="e5c888e5-3206-4553-8f53-60ee93248ad9"
-                  className={`group rounded-sm transform  transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${
-                    visibleSection === "skills"
-                      ? "rotate-45 scale-110"
-                      : "rotate-0 scale-100"
-                  }`}
+                  className={`group rounded-sm transform  transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${visibleSection === "skills"
+                    ? "rotate-45 scale-110"
+                    : "rotate-0 scale-100"
+                    }`}
                   data-name="Layer 1"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0
@@ -1463,20 +1439,18 @@ export default function Home({ publications }) {
                 >
                   {/* Fill */}
                   <path
-                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${
-                      visibleSection === "skills"
-                        ? "dark:text-white text-mid rotate-90"
-                        : "dark:text-dark text-light rotate-0"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${visibleSection === "skills"
+                      ? "dark:text-white text-mid rotate-90"
+                      : "dark:text-dark text-light rotate-0"
+                      }`}
                     d="M5.64 5.64h12.73v12.73H5.64z"
                   />
                   {/* Border */}
                   <path
-                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${
-                      visibleSection === "skills"
-                        ? "dark:text-white text-dark rotate-45 opacity-100"
-                        : "dark:text-white text-light rotate-45"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${visibleSection === "skills"
+                      ? "dark:text-white text-dark rotate-45 opacity-100"
+                      : "dark:text-white text-light rotate-45"
+                      }`}
                     d="M12 22.41L1.59 12 12 1.59 22.41 12zM4.41 12L12 19.59 19.59 12 12 4.41z"
                   />
                 </svg>
@@ -1500,8 +1474,8 @@ export default function Home({ publications }) {
                   viewBox="0
               0 24 24"
                 > */}
-                  {/* Fill */}
-                  {/* <path
+              {/* Fill */}
+              {/* <path
                     className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${
                       visibleSection === "my-work"
                         ? "dark:text-white text-mid rotate-90"
@@ -1509,8 +1483,8 @@ export default function Home({ publications }) {
                     }`}
                     d="M5.64 5.64h12.73v12.73H5.64z"
                   /> */}
-                  {/* Border */}
-                  {/* <path
+              {/* Border */}
+              {/* <path
                     className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${
                       visibleSection === "my-work"
                         ? "dark:text-white text-dark rotate-45 opacity-100"
@@ -1539,8 +1513,8 @@ export default function Home({ publications }) {
                   viewBox="0
               0 24 24"
                 > */}
-                  {/* Fill */}
-                  {/* <path
+              {/* Fill */}
+              {/* <path
                     className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${
                       visibleSection === "blog"
                         ? "dark:text-white text-mid rotate-90"
@@ -1548,8 +1522,8 @@ export default function Home({ publications }) {
                     }`}
                     d="M5.64 5.64h12.73v12.73H5.64z"
                   /> */}
-                  {/* Border */}
-                  {/* <path
+              {/* Border */}
+              {/* <path
                     className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${
                       visibleSection === "blog"
                         ? "dark:text-white text-dark rotate-45 opacity-100"
@@ -1568,11 +1542,10 @@ export default function Home({ publications }) {
               >
                 <svg
                   id="e5c888e5-3206-4553-8f53-60ee93248ad9"
-                  className={`group rounded-sm transform transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${
-                    visibleSection === "contact"
-                      ? "rotate-45 scale-110"
-                      : "rotate-0 scale-100"
-                  }`}
+                  className={`group rounded-sm transform transition duration-500 ease-in-out hover:rotate-45 hover:scale-110 ${visibleSection === "contact"
+                    ? "rotate-45 scale-110"
+                    : "rotate-0 scale-100"
+                    }`}
                   data-name="Layer 1"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0
@@ -1580,20 +1553,18 @@ export default function Home({ publications }) {
                 >
                   {/* Fill */}
                   <path
-                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${
-                      visibleSection === "contact"
-                        ? "dark:text-white text-mid rotate-90"
-                        : "dark:text-dark text-light rotate-0"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${visibleSection === "contact"
+                      ? "dark:text-white text-mid rotate-90"
+                      : "dark:text-dark text-light rotate-0"
+                      }`}
                     d="M5.64 5.64h12.73v12.73H5.64z"
                   />
                   {/* Border */}
                   <path
-                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${
-                      visibleSection === "contact"
-                        ? "dark:text-white text-dark rotate-45 opacity-100"
-                        : "dark:text-white text-light rotate-45"
-                    }`}
+                    className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${visibleSection === "contact"
+                      ? "dark:text-white text-dark rotate-45 opacity-100"
+                      : "dark:text-white text-light rotate-45"
+                      }`}
                     d="M12 22.41L1.59 12 12 1.59 22.41 12zM4.41 12L12 19.59 19.59 12 12 4.41z"
                   />
                 </svg>
