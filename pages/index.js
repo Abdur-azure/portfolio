@@ -593,10 +593,10 @@ export default function Home({ publications }) {
                 </button> */}
                 <a
                   className="text-xl btn-brand btn-lg group"
-                  href="https://onedrive.live.com/embed?resid=8A8FAFBD46A54CED%21112960&authkey=!AFopIUqChau9lgE&em=2"
+                  href="https://onedrive.live.com/embed?resid=8A8FAFBD46A54CED%21112966&authkey=!AFopIUqChau9lgE&em=2" width="476" height="288" frameborder="0" scrolling="no"
                   download>
                   Resume
-                </a>
+                </a>                
               </div>
             </div>
           </main>
@@ -660,7 +660,7 @@ export default function Home({ publications }) {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     className="overflow-hidden rounded-md"
-                    src="https://onedrive.live.com/embed?resid=8A8FAFBD46A54CED%21112961&authkey=%21AFopIUqChau9lgE&width=2407&height=2770"
+                    src="https://onedrive.live.com/embed?resid=8A8FAFBD46A54CED%21112965&authkey=%21AFopIUqChau9lgE&width=2407&height=2770"
                     width={880}
                     height={880}
                     alt={"Abdur Rahman headshot"}
