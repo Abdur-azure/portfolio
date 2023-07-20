@@ -593,7 +593,7 @@ export default function Home({ publications }) {
                 </button> */}
                 <a
                   className="text-xl btn-brand btn-lg group"
-                  href="https://onedrive.live.com/embed?resid=8A8FAFBD46A54CED%21112966&authkey=!AFopIUqChau9lgE&em=2" width="476" height="288" frameborder="0" scrolling="no"
+                  href="https://onedrive.live.com/embed?resid=8A8FAFBD46A54CED%21112966&authkey=!AFopIUqChau9lgE&em=2"
                   download>
                   Resume
                 </a>                
