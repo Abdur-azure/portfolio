@@ -24,6 +24,7 @@ import GitHubB from "../components/icons/GitHubB";
 import VisualStudio from "../components/icons/VisualStudio";
 import VSCode from "../components/icons/VSCode";
 import SQLServer from "../components/icons/SQLServer";
+import Xamarin from "../components/icons/Xamarin";
 
 // Project Card
 //import ProjectCard from "../components/ProjectCard";
@@ -730,6 +731,21 @@ export default function Home({ publications }) {
               <Icon
                 IconType={SQLServer}
                 title="SQLServer"
+                width={"w-16"}
+                height={"h-16"}
+                padding={"p-0"}
+                flexDirection={"flex-col"}
+                titleMargins={"mt-4"}
+                titleSize={"text-sm sm:text-sm"}
+                marginBottom={"mb-4"}
+                marginRight={"mr-0"}
+                textTransform={"normal-case"}
+                fixedHeight={"h-28"}
+              />
+              {/* Xamarin */}
+              <Icon
+                IconType={Xamarin}
+                title="Xamarin"
                 width={"w-16"}
                 height={"h-16"}
                 padding={"p-0"}
