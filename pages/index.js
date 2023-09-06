@@ -633,11 +633,6 @@ export default function Home({ publications }) {
                     and resolve challenges effectively. Excellent communication skills
                     enable collaboration with cross-functional teams and clients.
                   </p>
-                  <p className="text-xl">
-                    With strong problem-solving and analytical abilities,
-                    I identify and resolve challenges effectively. Excellent communication
-                    skills enable collaboration with cross-functional teams and clients.
-                  </p>
                   {/* <p className="text-lg">
                     Alongside my design and development work, I run a BA Media
                     Production degree course and a corporate video production
