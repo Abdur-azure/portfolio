@@ -594,7 +594,7 @@ export default function Home({ publications }) {
                 </button> */}
                 <a
                   className="text-xl btn-brand btn-lg group"
-                  href="https://onedrive.live.com/embed?resid=8A8FAFBD46A54CED%21145741&authkey=!AFopIUqChau9lgE&em=2"
+                  href="https://1drv.ms/b/s!Au1MpUa9r4-KiPJN5qiRltrH79cQ4A?e=hwHeAV"
                   download>
                     Resume
                 </a>                
