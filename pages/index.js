@@ -575,9 +575,10 @@ export default function Home({ publications }) {
                     eraseDelay={1500}
                     text={[
                       `Developer`,
-                      `Designer`,
-                      `Engineer`,
                       `Architect`,
+                      `Engineer`
+                      `Analyst`,
+                      `Designer`
                     ]}
                   />
                 </h2>
@@ -617,7 +618,7 @@ export default function Home({ publications }) {
                   <p className="text-xl">
                     Hi! I&apos;m Abdur and I&apos;m a highly skilled and experienced
                     Full Stack Developer with a passion for software development and
-                    a drive to transition into a Project Manager role. I bring expertise
+                    a drive to transition into a Business Analyst role. I bring expertise
                     in .NET development, including C#, ASP.NET, and Microsoft SQL Server.
                     Proficient in front-end technologies like HTML, CSS, and JavaScript,
                     along with React.js library and Node.js framework.
