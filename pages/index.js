@@ -576,7 +576,7 @@ export default function Home({ publications }) {
                     text={[
                       `Developer`,
                       `Architect`,
-                      `Engineer`
+                      `Engineer`,
                       `Analyst`,
                       `Designer`
                     ]}
